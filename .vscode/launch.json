@@ -1,0 +1,97 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "GamesConfigServerApplication",
+            "request": "launch",
+            "mainClass": "com.opdevinit.gamesconfigserver.GamesConfigServerApplication",
+            "projectName": "games-config-server",
+            "vmArgs": "-Dmanagement.endpoints.jmx.exposure.include=*"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-GameSaveApplication<game_saved>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.game_save.game_save.GameSaveApplication",
+            "projectName": "game_saved",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": "-Dmanagement.endpoints.jmx.exposure.include=*"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-GamehouseApplication<game_house>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.gamehouse.gamehouse.GamehouseApplication",
+            "projectName": "game-house",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": "-Dmanagement.endpoints.jmx.exposure.include=* -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=51674 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=game_house"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-EurekaServerApplication<eureka_server>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.eureka_server.eureka_server.EurekaServerApplication",
+            "projectName": "eureka_server",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": "-Dmanagement.endpoints.jmx.exposure.include=* -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=51665 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=eureka_server"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-GamesGatewayZuulApplication<games-gateway-zuul>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.opdevinit.gamesgatewayzuul.GamesGatewayZuulApplication",
+            "projectName": "games-gateway-zuul",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": "-Dmanagement.endpoints.jmx.exposure.include=*"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-GameUserApplication<game-user>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.opdevinit.gameuser.GameUserApplication",
+            "projectName": "game-user",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": "-Dmanagement.endpoints.jmx.exposure.include=*"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-SpringSecurityApplication<spring-Security>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.opdevinit.springsecurityjwt.SpringSecurityJwthApplication",
+            "projectName": "gamessecurity",
+            "args": "",
+            "vmArgs": "-Dmanagement.endpoints.jmx.exposure.include=*"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-SpringSecurityJwtApplication<spring-security-jwt>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "br.com.giulianabezerra.springsecurityjwt.SpringSecurityJwtApplication",
+            "projectName": "spring-security-jwt",
+            "args": "",
+            "vmArgs": "-Dmanagement.endpoints.jmx.exposure.include=*"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-gamesConfigServerApplication<spring-security-jwt>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "br.com.opdevinit.gamesconfigserver.GamesConfigServerApplication",
+            "projectName": "config-server",
+            "args": "",
+            "vmArgs": "-Dmanagement.endpoints.jmx.exposure.include=*"
+        }
+    ]
+}
