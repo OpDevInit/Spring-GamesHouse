@@ -1,7 +1,5 @@
 package com.game_save.game_save.entities;
 
-
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -20,7 +18,7 @@ import lombok.experimental.SuperBuilder;
 @AllArgsConstructor
 public class Games {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY )
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     @Column(name = "nome")
     private String name;

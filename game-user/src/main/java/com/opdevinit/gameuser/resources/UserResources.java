@@ -14,20 +14,20 @@ import com.opdevinit.gameuser.repositories.UserRepository;
 @RestController
 @RequestMapping(value = "/users")
 public class UserResources {
-    
+
     @Autowired
     private UserRepository userRepository;
 
     @GetMapping(value = "/{id}")
-    public ResponseEntity<User> findById(@PathVariable Long id){
+    public ResponseEntity<User> findById(@PathVariable Long id) {
         User user = userRepository.findById(id).get();
         return ResponseEntity.ok(user);
     }
+
     @GetMapping(value = "/search")
-    public ResponseEntity<User> findByEmail(@RequestParam String email){
+    public ResponseEntity<User> findByEmail(@RequestParam String email) {
         User user = userRepository.findByEmail(email);
         return ResponseEntity.ok(user);
     }
-
 
 }

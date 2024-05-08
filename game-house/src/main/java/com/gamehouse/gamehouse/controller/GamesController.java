@@ -4,7 +4,7 @@ import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
- import org.springframework.cloud.context.config.annotation.RefreshScope;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -26,9 +26,9 @@ public class GamesController {
     @Autowired
     public GamesServices gamesServices;
 
-    //@Value("${test.config}")
+    // @Value("${test.config}")
     private String testConfig = "test";
-    
+
     private static Logger logger = LoggerFactory.getLogger(GamesController.class);
 
     // CRUD path's

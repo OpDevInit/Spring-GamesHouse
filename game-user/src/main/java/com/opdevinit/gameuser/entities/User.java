@@ -30,15 +30,9 @@ public class User {
     private String email;
     private String password;
 
-    //Coleção de Tabela Mista, com Carregamento Automatico
+    // Coleção de Tabela Mista, com Carregamento Automatico
     @ManyToMany(fetch = FetchType.EAGER)
-    @JoinTable(name = "tb_user_role",
-            joinColumns = @JoinColumn(name = "user_id"),
-            inverseJoinColumns = @JoinColumn(name = "role_id")
-    )
+    @JoinTable(name = "tb_user_role", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "role_id"))
     private Set<UserRole> roles = new HashSet<>();
-
-
-
 
 }
