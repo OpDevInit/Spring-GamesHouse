@@ -11,5 +11,7 @@
   - games-gateway
   - games-config-server
   - Os demais serviços.
-      
+
+
   
+siga os Schemas do [Postman](https://github.com/OpDevInit/Spring-GamesHouse/files/15336955/Games-House.postman_collection.json) para usar os endpoints
