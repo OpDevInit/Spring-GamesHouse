@@ -5,7 +5,7 @@
   - Desenvolvida em SB 3.1 e Java 17, a API consiste em um CRUD para jogos, ainda mal finalizado, falta implementar sistema de segurança Oauth2 e conteinerização Docker.
   - API ainda em desenvolvimento, mas funcional.
 
-## Inicie pela ordem correta dos serviços, para evitar falta de comunicação e comunicação
+## Inicie pela ordem correta dos serviços, para evitar falta de comunicação.
 - São eles, respectivamente:
   - Eureka-server
   - games-gateway
